@@ -7,7 +7,7 @@ R.c("server/chunks/ssr/[externals]_next_dist_compiled_@vercel_og_index_node_4a2f
 R.c("server/chunks/ssr/node_modules__pnpm_823a9a90._.js")
 R.c("server/chunks/ssr/app_5ac084a1._.js")
 R.c("server/chunks/ssr/979b6_next_dist_client_components_builtin_global-error_ca73ce3d.js")
-R.c("server/chunks/ssr/[root-of-the-server]__458c9ccf._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__f6c478cd._.js")
 R.c("server/chunks/ssr/979b6_next_dist_client_components_ea812f88._.js")
 R.c("server/chunks/ssr/979b6_next_dist_client_components_builtin_forbidden_705ff584.js")
 R.c("server/chunks/ssr/979b6_next_dist_client_components_builtin_unauthorized_2b6d1006.js")
