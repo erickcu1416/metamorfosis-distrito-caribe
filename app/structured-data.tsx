@@ -31,8 +31,8 @@ export function StructuredData() {
       }
     ],
     "image": [
-      "https://metamorfosis2026.com/images/flyer-oficial.jpg",
-      "https://metamorfosis2026.com/images/transporte-web.png"
+      "https://metamorfosis.jovenesdistritocaribe.com/images/flyer-oficial.jpg",
+      "https://metamorfosis.jovenesdistritocaribe.com/images/transporte-web.png"
     ],
     "organizer": {
       "@type": "Organization",
@@ -45,7 +45,7 @@ export function StructuredData() {
     },
     "offers": {
       "@type": "AggregateOffer",
-      "url": "https://metamorfosis2026.com",
+      "url": "https://metamorfosis.jovenesdistritocaribe.com",
       "priceCurrency": "MXN",
       "availability": "https://schema.org/InStock",
       "validFrom": "2026-02-01T00:00:00-06:00",
@@ -67,7 +67,7 @@ export function StructuredData() {
     "@type": "TravelAgency",
     "name": "Dragonfly Agencia de Viajes",
     "url": "https://www.facebook.com/Dragonflyviajes",
-    "logo": "https://metamorfosis2026.com/credits/dragonfly-logo.png",
+    "logo": "https://metamorfosis.jovenesdistritocaribe.com/credits/dragonfly-logo.png",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+52-998-241-7202",
@@ -91,25 +91,25 @@ export function StructuredData() {
         "@type": "ListItem",
         "position": 1,
         "name": "Inicio",
-        "item": "https://metamorfosis2026.com"
+        "item": "https://metamorfosis.jovenesdistritocaribe.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Paquete",
-        "item": "https://metamorfosis2026.com#paquete"
+        "item": "https://metamorfosis.jovenesdistritocaribe.com#paquete"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Precios",
-        "item": "https://metamorfosis2026.com#precios"
+        "item": "https://metamorfosis.jovenesdistritocaribe.com#precios"
       },
       {
         "@type": "ListItem",
         "position": 4,
         "name": "Contacto",
-        "item": "https://metamorfosis2026.com#contacto"
+        "item": "https://metamorfosis.jovenesdistritocaribe.com#contacto"
       }
     ]
   }

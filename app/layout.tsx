@@ -9,7 +9,7 @@ import { StructuredData } from './structured-data'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://metamorfosis2026.com'),
+  metadataBase: new URL('https://metamorfosis.jovenesdistritocaribe.com'),
   title: {
     default: 'Metamorfosis 2026 | Congreso Nacional Juvenil - Paquete Distrito Caribe',
     template: '%s | Metamorfosis 2026',
@@ -36,21 +36,21 @@ export const metadata: Metadata = {
 
   // Canonical URL
   alternates: {
-    canonical: 'https://metamorfosis2026.com',
+    canonical: 'https://metamorfosis.jovenesdistritocaribe.com',
   },
 
   // Open Graph - Optimizado para Facebook/WhatsApp
   openGraph: {
     type: 'website',
     locale: 'es_MX',
-    url: 'https://metamorfosis2026.com',
+    url: 'https://metamorfosis.jovenesdistritocaribe.com',
     title: 'Metamorfosis 2026 | Congreso Nacional Juvenil',
     description: '🎉 ¡Vive una experiencia sin límites! 7 días • 4 noches • 2 hoteles • 2 parques. Del 27 julio al 2 agosto 2026. Paquete Oficial Distrito Caribe. ¡Inscríbete ya!',
     siteName: 'Metamorfosis 2026',
     images: [
       {
-        url: 'https://metamorfosis2026.com/og-image.jpg',
-        secureUrl: 'https://metamorfosis2026.com/og-image.jpg',
+        url: 'https://metamorfosis.jovenesdistritocaribe.com/og-image.jpg',
+        secureUrl: 'https://metamorfosis.jovenesdistritocaribe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Metamorfosis 2026 - Congreso Nacional Juvenil - Paquete Distrito Caribe',
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Metamorfosis 2026 | Congreso Nacional Juvenil',
     description: '🎉 7 días inolvidables • 27 julio - 2 agosto 2026 • Paquete Distrito Caribe',
-    images: ['https://metamorfosis2026.com/og-image.jpg'],
+    images: ['https://metamorfosis.jovenesdistritocaribe.com/og-image.jpg'],
     creator: '@DistritoCaribe',
     site: '@Metamorfosis2026',
   },
