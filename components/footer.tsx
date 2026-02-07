@@ -6,6 +6,35 @@ export function Footer() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(139,92,246,0.05),transparent_70%)]" />
 
       <div className="relative mx-auto max-w-6xl px-4">
+        {/* Partners Section */}
+        <div className="mb-12 border-b border-border pb-12">
+          <p className="mb-8 text-center text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+            En alianza con
+          </p>
+          <div className="flex flex-col items-center justify-center gap-8 md:flex-row md:gap-16">
+            {/* Distrito Caribe */}
+            <img
+              src="/logo-distrito-caribe.svg"
+              alt="Distrito Caribe"
+              className="h-12 w-auto opacity-90 transition-opacity hover:opacity-100 md:h-16"
+            />
+
+            {/* Dragonfly */}
+            <a
+              href="https://www.facebook.com/Dragonflyviajes"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-opacity hover:opacity-80"
+            >
+              <img
+                src="/credits/dragonfly-logo.png"
+                alt="Dragonfly Agencia de Viajes"
+                className="h-10 w-auto md:h-12"
+              />
+            </a>
+          </div>
+        </div>
+
         <div className="grid gap-12 md:grid-cols-3">
           {/* Brand */}
           <div>

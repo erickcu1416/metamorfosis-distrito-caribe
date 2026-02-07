@@ -576,6 +576,10 @@ body {
   margin-bottom: 2.5rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -713,6 +717,10 @@ body {
   height: 3rem;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .h-2 {
   height: .5rem;
 }
@@ -803,10 +811,6 @@ body {
 
 .h-svh {
   height: 100svh;
-}
-
-.h-16 {
-  height: 4rem;
 }
 
 .max-h-96 {
@@ -1585,6 +1589,10 @@ body {
   background-color: #0000;
 }
 
+.bg-white\/10 {
+  background-color: #ffffff1a;
+}
+
 .bg-\[radial-gradient\(ellipse_70\%_50\%_at_50\%_40\%\,rgba\(139\,92\,246\,0\.08\)\,transparent_70\%\)\] {
   background-image: radial-gradient(70% 50% at 50% 40%, #8b5cf614, #0000 70%);
 }
@@ -1903,6 +1911,10 @@ body {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .pb-24 {
@@ -2801,6 +2813,10 @@ body {
   opacity: 1;
 }
 
+.hover\:opacity-80:hover {
+  opacity: .8;
+}
+
 .hover\:shadow-\[0_0_0_1px_hsl\(var\(--sidebar-accent\)\)\]:hover {
   --tw-shadow: 0 0 0 1px hsl(var(--sidebar-accent));
   --tw-shadow-colored: 0 0 0 1px var(--tw-shadow-color);
@@ -2929,7 +2945,15 @@ body {
   opacity: .5;
 }
 
-.group\/menu-item:focus-within .group-focus-within\/menu-item\:opacity-100, .group\/menu-item:hover .group-hover\/menu-item\:opacity-100, .group:hover .group-hover\:opacity-100 {
+.group\/menu-item:focus-within .group-focus-within\/menu-item\:opacity-100 {
+  opacity: 1;
+}
+
+.group:hover .group-hover\:bg-white\/15 {
+  background-color: #ffffff26;
+}
+
+.group\/menu-item:hover .group-hover\/menu-item\:opacity-100, .group:hover .group-hover\:opacity-100 {
   opacity: 1;
 }
 
@@ -3684,12 +3708,24 @@ body {
     display: none;
   }
 
-  .md\:h-\[80svh\] {
-    height: 80svh;
+  .md\:h-12 {
+    height: 3rem;
+  }
+
+  .md\:h-14 {
+    height: 3.5rem;
+  }
+
+  .md\:h-16 {
+    height: 4rem;
   }
 
   .md\:h-20 {
     height: 5rem;
+  }
+
+  .md\:h-\[80svh\] {
+    height: 80svh;
   }
 
   .md\:w-\[var\(--radix-navigation-menu-viewport-width\)\] {
@@ -3706,6 +3742,10 @@ body {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:flex-row-reverse {
@@ -3726,6 +3766,10 @@ body {
 
   .md\:justify-center {
     justify-content: center;
+  }
+
+  .md\:gap-16 {
+    gap: 4rem;
   }
 
   .md\:gap-6 {
