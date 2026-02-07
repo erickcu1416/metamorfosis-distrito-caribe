@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import { Inter, Geist_Mono } from 'next/font/google'
 
 import './globals.css'
+import { PreloadImages } from './preload-images'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const _geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-geist-mono' })
@@ -24,6 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <head>
+        <PreloadImages />
+      </head>
       <body className={`${inter.variable} font-sans antialiased`}>{children}</body>
     </html>
   )

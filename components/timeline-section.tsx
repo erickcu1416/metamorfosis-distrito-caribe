@@ -4,6 +4,8 @@ import { Bus, MapPin, Ticket, Church, Hotel, Home, ChevronDown } from "lucide-re
 import type { LucideIcon } from "lucide-react"
 import { useState } from "react"
 
+import { ResponsiveImage } from "./responsive-image"
+
 interface TimelineActivity {
   time: string
   activity: string
@@ -15,7 +17,8 @@ interface TimelineEvent {
   title: string
   icon: LucideIcon
   color: "purple" | "green"
-  image: string | null
+  images?: { web: string; mobile: string } | null
+  objectPosition?: { web?: string; mobile?: string }
   activities: TimelineActivity[]
 }
 
@@ -26,7 +29,14 @@ const events: TimelineEvent[] = [
     title: "Salida desde Cancun",
     icon: Bus,
     color: "purple",
-    image: "/images/autobus.jpg",
+    images: {
+      web: "/images/transporte-web.png",
+      mobile: "/images/transporte-mobile.png",
+    },
+    objectPosition: {
+      web: "center center",
+      mobile: "center center",
+    },
     activities: [
       { time: "12:00 pm", activity: "Salida de Cancun hacia Orizaba, Veracruz (con paradas para recoger hermanos sobre la ruta)." },
     ],
@@ -37,7 +47,14 @@ const events: TimelineEvent[] = [
     title: "Orizaba, Volcanic Park y Puebla",
     icon: MapPin,
     color: "green",
-    image: "/images/volcanic-park.jpg",
+    images: {
+      web: "/images/volcanic-park-web.png",
+      mobile: "/images/volcanic-park-mobile.png",
+    },
+    objectPosition: {
+      web: "center 60%",
+      mobile: "center center",
+    },
     activities: [
       { time: "08:00 am", activity: "Llegada a Orizaba, Veracruz al mercado para desayunar." },
       { time: "10:00 am", activity: "Salida del mercado hacia Volcanic Park." },
@@ -54,7 +71,14 @@ const events: TimelineEvent[] = [
     title: "Congreso - Dia 1",
     icon: Church,
     color: "purple",
-    image: "/images/congreso.jpg",
+    images: {
+      web: "/images/kit-web.png",
+      mobile: "/images/kit-mobile.png",
+    },
+    objectPosition: {
+      web: "center center",
+      mobile: "center center",
+    },
     activities: [
       { time: "04:00 am", activity: "Salida del hotel hacia San Luis Potosi (salir listos para el congreso)." },
       { time: "11:00 am", activity: "Llegada al Congreso de Jovenes." },
@@ -69,7 +93,14 @@ const events: TimelineEvent[] = [
     title: "Congreso - Dia 2",
     icon: Church,
     color: "green",
-    image: "/images/congreso.jpg",
+    images: {
+      web: "/images/kit-web.png",
+      mobile: "/images/kit-mobile.png",
+    },
+    objectPosition: {
+      web: "center center",
+      mobile: "center center",
+    },
     activities: [
       { time: "08:00 am", activity: "Salida del hotel hacia el congreso." },
       { time: "02:00 pm", activity: "Salida del congreso hacia el hotel." },
@@ -83,7 +114,14 @@ const events: TimelineEvent[] = [
     title: "Congreso - Dia 3",
     icon: Church,
     color: "purple",
-    image: "/images/congreso.jpg",
+    images: {
+      web: "/images/kit-web.png",
+      mobile: "/images/kit-mobile.png",
+    },
+    objectPosition: {
+      web: "center center",
+      mobile: "center center",
+    },
     activities: [
       { time: "08:00 am", activity: "Salida del hotel hacia el congreso." },
       { time: "02:00 pm", activity: "Salida del congreso hacia el hotel." },
@@ -97,7 +135,14 @@ const events: TimelineEvent[] = [
     title: "Kataplum - Parque de Diversiones",
     icon: Ticket,
     color: "green",
-    image: "/images/kataplum.jpg",
+    images: {
+      web: "/images/kataplum-web.png",
+      mobile: "/images/kataplum-mobile.png",
+    },
+    objectPosition: {
+      web: "center center",
+      mobile: "center center",
+    },
     activities: [
       { time: "05:00 am", activity: "Salida del hotel con maletas en mano hacia Kataplum." },
       { time: "12:00 pm", activity: "Llegada a Kataplum." },
@@ -155,13 +200,14 @@ function TimelineCard({ event }: { event: TimelineEvent }) {
       <div className="ml-12 w-full md:ml-16">
         <div className={`overflow-hidden rounded-xl border ${colorClasses.border} bg-card transition-all hover:bg-muted/30`}>
           {/* Image banner */}
-          {event.image && (
+          {event.images && (
             <div className="relative h-40 overflow-hidden">
-              <Image
-                src={event.image || "/placeholder.svg"}
+              <ResponsiveImage
+                webSrc={event.images.web}
+                mobileSrc={event.images.mobile}
                 alt={event.title}
-                fill
-                className="object-cover"
+                priority={false}
+                objectPosition={event.objectPosition}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
             </div>

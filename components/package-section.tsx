@@ -15,6 +15,8 @@ import {
   ChevronDown,
 } from "lucide-react"
 
+import { ResponsiveImage } from "./responsive-image"
+
 /* ------------------------------------------------------------------ */
 /*  Performant scroll-linked animation hook (rAF-based, no setState   */
 /*  thrashing).  Writes directly to a CSS custom property so React    */
@@ -80,7 +82,14 @@ function clamp(v: number, lo = 0, hi = 1) {
 const features = [
   {
     id: "transporte",
-    image: "/images/autobus.jpg",
+    images: {
+      web: "/images/transporte-web.png",
+      mobile: "/images/transporte-mobile.png",
+    },
+    objectPosition: {
+      web: "center center",
+      mobile: "center center",
+    },
     icon: Bus,
     title: "Transporte",
     headline: "Viaja comodo y seguro",
@@ -90,7 +99,14 @@ const features = [
   },
   {
     id: "hospedaje",
-    image: "/images/hotel.jpg",
+    images: {
+      web: "/images/hospedaje-web.png",
+      mobile: "/images/hospedaje-mobile.png",
+    },
+    objectPosition: {
+      web: "center center",
+      mobile: "center 45%",
+    },
     icon: Hotel,
     title: "Hospedaje",
     headline: "Descansa como mereces",
@@ -100,7 +116,14 @@ const features = [
   },
   {
     id: "volcanic",
-    image: "/images/volcanic-park.jpg",
+    images: {
+      web: "/images/volcanic-park-web.png",
+      mobile: "/images/volcanic-park-mobile.png",
+    },
+    objectPosition: {
+      web: "center 60%",
+      mobile: "center 50%",
+    },
     icon: Ticket,
     title: "Volcanic Park",
     headline: "Adrenalina al maximo",
@@ -110,7 +133,14 @@ const features = [
   },
   {
     id: "kataplum",
-    image: "/images/kataplum.jpg",
+    images: {
+      web: "/images/kataplum-web.png",
+      mobile: "/images/kataplum-mobile.png",
+    },
+    objectPosition: {
+      web: "center center",
+      mobile: "center 45%",
+    },
     icon: Ticket,
     title: "iKataplum!",
     headline: "Diversiones extremas",
@@ -120,7 +150,14 @@ const features = [
   },
   {
     id: "cultura",
-    image: "/images/puebla-centro.jpg",
+    images: {
+      web: "/images/cultura-web.png",
+      mobile: "/images/cultura-mobile.png",
+    },
+    objectPosition: {
+      web: "center center",
+      mobile: "center 50%",
+    },
     icon: MapPin,
     title: "Lugares increibles",
     headline: "Cultura y sabor",
@@ -130,7 +167,14 @@ const features = [
   },
   {
     id: "kit",
-    image: "/images/congreso.jpg",
+    images: {
+      web: "/images/kit-web.png",
+      mobile: "/images/kit-mobile.png",
+    },
+    objectPosition: {
+      web: "center center",
+      mobile: "center center",
+    },
     icon: Shirt,
     title: "Kit oficial",
     headline: "Lleva el recuerdo",
@@ -169,7 +213,7 @@ function Slide({
   const scaleCalc = useCallback(
     (rect: DOMRect, vh: number) => {
       const t = clamp(1 - rect.top / vh)
-      return 1 + (1 - t) * 0.12 // 1.12 → 1.0
+      return 1 + (1 - t) * 0.05 // 1.05 → 1.0
     },
     []
   )
@@ -193,7 +237,7 @@ function Slide({
       style={
         {
           "--img-y": "0",
-          "--img-s": "1.12",
+          "--img-s": "1.05",
         } as React.CSSProperties
       }
     >
@@ -206,13 +250,12 @@ function Slide({
               "translate3d(0, calc(var(--img-y) * 1px), 0) scale(var(--img-s))",
           }}
         >
-          <Image
-            src={f.image || "/placeholder.svg"}
+          <ResponsiveImage
+            webSrc={f.images?.web || "/placeholder.svg"}
+            mobileSrc={f.images?.mobile || "/placeholder.svg"}
             alt={f.headline}
-            fill
-            className="object-cover"
-            sizes="100vw"
             priority={index < 2}
+            objectPosition={f.objectPosition}
           />
         </div>
 
@@ -494,13 +537,28 @@ function Flyer() {
             willChange: "transform, opacity",
           }}
         >
-          <Image
-            src="/images/photo-2026-02-05-16-08-09.jpg"
-            alt="Paquete Oficial Distrito Caribe - Metamorfosis 2026"
-            width={700}
-            height={875}
-            className="w-full"
-          />
+          <picture>
+            {/* AVIF - Mejor calidad */}
+            <source
+              type="image/avif"
+              srcSet="/images/flyer-oficial-1x.avif 1x, /images/flyer-oficial-2x.avif 2x"
+            />
+
+            {/* WebP - Fallback */}
+            <source
+              type="image/webp"
+              srcSet="/images/flyer-oficial-1x.webp 1x, /images/flyer-oficial-2x.webp 2x"
+            />
+
+            {/* JPG - Fallback final */}
+            <img
+              src="/images/flyer-oficial.jpg"
+              alt="Paquete Oficial Distrito Caribe - Metamorfosis 2026"
+              className="w-full rounded-2xl"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </div>
       </div>
     </div>
@@ -528,6 +586,15 @@ function Intro() {
           willChange: "transform, opacity",
         }}
       >
+        {/* Logo Distrito Caribe */}
+        <div className="mb-6 flex justify-center">
+          <img
+            src="/logo-distrito-caribe.svg"
+            alt="Distrito Caribe"
+            className="h-16 w-auto opacity-90 md:h-20"
+          />
+        </div>
+
         <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#10B981]/30 bg-[#10B981]/10 px-5 py-2">
           <span className="h-2 w-2 animate-pulse rounded-full bg-[#10B981]" />
           <span className="text-xs font-black uppercase tracking-[0.25em] text-[#10B981]">

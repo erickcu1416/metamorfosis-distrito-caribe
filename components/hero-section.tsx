@@ -94,9 +94,9 @@ export function HeroSection() {
         <div className="mt-12 flex items-center justify-center gap-8">
           {[
             { value: "7", label: "Dias" },
-            { value: "6", label: "Noches" },
+            { value: "4", label: "Noches" },
             { value: "2", label: "Parques" },
-            { value: "1", label: "Hotel" },
+            { value: "2", label: "Hoteles" },
           ].map((item) => (
             <div key={item.label} className="text-center">
               <div className="text-2xl font-black text-foreground md:text-3xl">{item.value}</div>

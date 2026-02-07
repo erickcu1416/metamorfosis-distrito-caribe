@@ -589,7 +589,10 @@ function clamp(v, lo = 0, hi = 1) {
 /* ------------------------------------------------------------------ */ /*  Data                                                              */ /* ------------------------------------------------------------------ */ const features = [
     {
         id: "transporte",
-        image: "/images/autobus.jpg",
+        images: {
+            web: "/images/transporte-web.png",
+            mobile: "/images/transporte-mobile.png"
+        },
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bus$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Bus$3e$__["Bus"],
         title: "Transporte",
         headline: "Viaja comodo y seguro",
@@ -603,7 +606,10 @@ function clamp(v, lo = 0, hi = 1) {
     },
     {
         id: "hospedaje",
-        image: "/images/hotel.jpg",
+        images: {
+            web: "/images/hospedaje-web.png",
+            mobile: "/images/hospedaje-mobile.png"
+        },
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$hotel$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Hotel$3e$__["Hotel"],
         title: "Hospedaje",
         headline: "Descansa como mereces",
@@ -617,7 +623,10 @@ function clamp(v, lo = 0, hi = 1) {
     },
     {
         id: "volcanic",
-        image: "/images/volcanic-park.jpg",
+        images: {
+            web: "/images/volcanic-park-web.png",
+            mobile: "/images/volcanic-park-mobile.png"
+        },
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ticket$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Ticket$3e$__["Ticket"],
         title: "Volcanic Park",
         headline: "Adrenalina al maximo",
@@ -631,7 +640,10 @@ function clamp(v, lo = 0, hi = 1) {
     },
     {
         id: "kataplum",
-        image: "/images/kataplum.jpg",
+        images: {
+            web: "/images/kataplum-web.png",
+            mobile: "/images/kataplum-mobile.png"
+        },
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ticket$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Ticket$3e$__["Ticket"],
         title: "iKataplum!",
         headline: "Diversiones extremas",
@@ -645,7 +657,10 @@ function clamp(v, lo = 0, hi = 1) {
     },
     {
         id: "cultura",
-        image: "/images/puebla-centro.jpg",
+        images: {
+            web: "/images/cultura-web.png",
+            mobile: "/images/cultura-mobile.png"
+        },
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"],
         title: "Lugares increibles",
         headline: "Cultura y sabor",
@@ -659,7 +674,10 @@ function clamp(v, lo = 0, hi = 1) {
     },
     {
         id: "kit",
-        image: "/images/congreso.jpg",
+        images: {
+            web: "/images/kit-web.png",
+            mobile: "/images/kit-mobile.png"
+        },
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shirt$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Shirt$3e$__["Shirt"],
         title: "Kit oficial",
         headline: "Lleva el recuerdo",
@@ -721,39 +739,39 @@ function clamp(v, lo = 0, hi = 1) {
                             priority: index < 2
                         }, void 0, false, {
                             fileName: "[project]/components/package-section.tsx",
-                            lineNumber: 209,
+                            lineNumber: 229,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/package-section.tsx",
-                        lineNumber: 202,
+                        lineNumber: 222,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 bg-gradient-to-t from-[#0c0a14] via-[#0c0a14]/60 to-transparent"
                     }, void 0, false, {
                         fileName: "[project]/components/package-section.tsx",
-                        lineNumber: 220,
+                        lineNumber: 240,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: `absolute inset-0 hidden md:block ${isEven ? "bg-gradient-to-r from-[#0c0a14]/90 via-[#0c0a14]/30 to-transparent" : "bg-gradient-to-l from-[#0c0a14]/90 via-[#0c0a14]/30 to-transparent"}`
                     }, void 0, false, {
                         fileName: "[project]/components/package-section.tsx",
-                        lineNumber: 221,
+                        lineNumber: 241,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 bg-gradient-to-b from-[#0c0a14]/50 via-transparent to-transparent"
                     }, void 0, false, {
                         fileName: "[project]/components/package-section.tsx",
-                        lineNumber: 228,
+                        lineNumber: 248,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/package-section.tsx",
-                lineNumber: 201,
+                lineNumber: 221,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -766,7 +784,7 @@ function clamp(v, lo = 0, hi = 1) {
                 }
             }, void 0, false, {
                 fileName: "[project]/components/package-section.tsx",
-                lineNumber: 232,
+                lineNumber: 252,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -791,7 +809,7 @@ function clamp(v, lo = 0, hi = 1) {
                                     children: String(index + 1).padStart(2, "0")
                                 }, void 0, false, {
                                     fileName: "[project]/components/package-section.tsx",
-                                    lineNumber: 264,
+                                    lineNumber: 284,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -808,7 +826,7 @@ function clamp(v, lo = 0, hi = 1) {
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/components/package-section.tsx",
-                                            lineNumber: 277,
+                                            lineNumber: 297,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -819,19 +837,19 @@ function clamp(v, lo = 0, hi = 1) {
                                             children: f.title
                                         }, void 0, false, {
                                             fileName: "[project]/components/package-section.tsx",
-                                            lineNumber: 278,
+                                            lineNumber: 298,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/package-section.tsx",
-                                    lineNumber: 270,
+                                    lineNumber: 290,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/package-section.tsx",
-                            lineNumber: 259,
+                            lineNumber: 279,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -843,7 +861,7 @@ function clamp(v, lo = 0, hi = 1) {
                             children: f.headline
                         }, void 0, false, {
                             fileName: "[project]/components/package-section.tsx",
-                            lineNumber: 288,
+                            lineNumber: 308,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -855,7 +873,7 @@ function clamp(v, lo = 0, hi = 1) {
                             children: f.body
                         }, void 0, false, {
                             fileName: "[project]/components/package-section.tsx",
-                            lineNumber: 299,
+                            lineNumber: 319,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -874,24 +892,24 @@ function clamp(v, lo = 0, hi = 1) {
                                     children: tag
                                 }, tag, false, {
                                     fileName: "[project]/components/package-section.tsx",
-                                    lineNumber: 318,
+                                    lineNumber: 338,
                                     columnNumber: 17
                                 }, this);
                             })
                         }, void 0, false, {
                             fileName: "[project]/components/package-section.tsx",
-                            lineNumber: 310,
+                            lineNumber: 330,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/package-section.tsx",
-                    lineNumber: 250,
+                    lineNumber: 270,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/package-section.tsx",
-                lineNumber: 243,
+                lineNumber: 263,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -908,17 +926,17 @@ function clamp(v, lo = 0, hi = 1) {
                             }
                         }, di, false, {
                             fileName: "[project]/components/package-section.tsx",
-                            lineNumber: 345,
+                            lineNumber: 365,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/package-section.tsx",
-                    lineNumber: 343,
+                    lineNumber: 363,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/package-section.tsx",
-                lineNumber: 338,
+                lineNumber: 358,
                 columnNumber: 7
             }, this),
             isFirst && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -932,26 +950,26 @@ function clamp(v, lo = 0, hi = 1) {
                         children: "Desliza"
                     }, void 0, false, {
                         fileName: "[project]/components/package-section.tsx",
-                        lineNumber: 364,
+                        lineNumber: 384,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
                         className: "h-4 w-4 animate-bounce text-foreground/25"
                     }, void 0, false, {
                         fileName: "[project]/components/package-section.tsx",
-                        lineNumber: 367,
+                        lineNumber: 387,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/package-section.tsx",
-                lineNumber: 360,
+                lineNumber: 380,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/package-section.tsx",
-        lineNumber: 186,
+        lineNumber: 206,
         columnNumber: 5
     }, this);
 }
@@ -969,12 +987,12 @@ function clamp(v, lo = 0, hi = 1) {
             }
         }, void 0, false, {
             fileName: "[project]/components/package-section.tsx",
-            lineNumber: 381,
+            lineNumber: 401,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/package-section.tsx",
-        lineNumber: 380,
+        lineNumber: 400,
         columnNumber: 5
     }, this);
 }
@@ -1010,14 +1028,14 @@ function clamp(v, lo = 0, hi = 1) {
                     className: "pointer-events-none absolute -right-32 -top-32 h-72 w-72 rounded-full bg-[#8B5CF6]/[.08] blur-[100px]"
                 }, void 0, false, {
                     fileName: "[project]/components/package-section.tsx",
-                    lineNumber: 425,
+                    lineNumber: 445,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "pointer-events-none absolute -bottom-32 -left-32 h-72 w-72 rounded-full bg-[#10B981]/[.08] blur-[100px]"
                 }, void 0, false, {
                     fileName: "[project]/components/package-section.tsx",
-                    lineNumber: 426,
+                    lineNumber: 446,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1032,7 +1050,7 @@ function clamp(v, lo = 0, hi = 1) {
                                         className: "h-4 w-4 text-[#8B5CF6]"
                                     }, void 0, false, {
                                         fileName: "[project]/components/package-section.tsx",
-                                        lineNumber: 431,
+                                        lineNumber: 451,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1040,18 +1058,18 @@ function clamp(v, lo = 0, hi = 1) {
                                         children: "Resumen del paquete"
                                     }, void 0, false, {
                                         fileName: "[project]/components/package-section.tsx",
-                                        lineNumber: 432,
+                                        lineNumber: 452,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/package-section.tsx",
-                                lineNumber: 430,
+                                lineNumber: 450,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/package-section.tsx",
-                            lineNumber: 429,
+                            lineNumber: 449,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1064,13 +1082,13 @@ function clamp(v, lo = 0, hi = 1) {
                                     children: "incluido"
                                 }, void 0, false, {
                                     fileName: "[project]/components/package-section.tsx",
-                                    lineNumber: 440,
+                                    lineNumber: 460,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/package-section.tsx",
-                            lineNumber: 438,
+                            lineNumber: 458,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1097,12 +1115,12 @@ function clamp(v, lo = 0, hi = 1) {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/components/package-section.tsx",
-                                                lineNumber: 464,
+                                                lineNumber: 484,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/package-section.tsx",
-                                            lineNumber: 458,
+                                            lineNumber: 478,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1110,36 +1128,36 @@ function clamp(v, lo = 0, hi = 1) {
                                             children: item
                                         }, void 0, false, {
                                             fileName: "[project]/components/package-section.tsx",
-                                            lineNumber: 466,
+                                            lineNumber: 486,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, item, true, {
                                     fileName: "[project]/components/package-section.tsx",
-                                    lineNumber: 450,
+                                    lineNumber: 470,
                                     columnNumber: 17
                                 }, this);
                             })
                         }, void 0, false, {
                             fileName: "[project]/components/package-section.tsx",
-                            lineNumber: 445,
+                            lineNumber: 465,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/package-section.tsx",
-                    lineNumber: 428,
+                    lineNumber: 448,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/package-section.tsx",
-            lineNumber: 412,
+            lineNumber: 432,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/package-section.tsx",
-        lineNumber: 411,
+        lineNumber: 431,
         columnNumber: 5
     }, this);
 }
@@ -1166,22 +1184,22 @@ function clamp(v, lo = 0, hi = 1) {
                     className: "w-full"
                 }, void 0, false, {
                     fileName: "[project]/components/package-section.tsx",
-                    lineNumber: 497,
+                    lineNumber: 517,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/package-section.tsx",
-                lineNumber: 489,
+                lineNumber: 509,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/package-section.tsx",
-            lineNumber: 488,
+            lineNumber: 508,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/package-section.tsx",
-        lineNumber: 487,
+        lineNumber: 507,
         columnNumber: 5
     }, this);
 }
@@ -1196,7 +1214,7 @@ function clamp(v, lo = 0, hi = 1) {
                 className: "pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_40%,rgba(139,92,246,0.08),transparent_70%)]"
             }, void 0, false, {
                 fileName: "[project]/components/package-section.tsx",
-                lineNumber: 522,
+                lineNumber: 542,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1213,7 +1231,7 @@ function clamp(v, lo = 0, hi = 1) {
                                 className: "h-2 w-2 animate-pulse rounded-full bg-[#10B981]"
                             }, void 0, false, {
                                 fileName: "[project]/components/package-section.tsx",
-                                lineNumber: 532,
+                                lineNumber: 552,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1221,13 +1239,13 @@ function clamp(v, lo = 0, hi = 1) {
                                 children: "Paquete oficial Distrito Caribe"
                             }, void 0, false, {
                                 fileName: "[project]/components/package-section.tsx",
-                                lineNumber: 533,
+                                lineNumber: 553,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/package-section.tsx",
-                        lineNumber: 531,
+                        lineNumber: 551,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1236,7 +1254,7 @@ function clamp(v, lo = 0, hi = 1) {
                             "Una experiencia",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                 fileName: "[project]/components/package-section.tsx",
-                                lineNumber: 539,
+                                lineNumber: 559,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1244,13 +1262,13 @@ function clamp(v, lo = 0, hi = 1) {
                                 children: "sin limites"
                             }, void 0, false, {
                                 fileName: "[project]/components/package-section.tsx",
-                                lineNumber: 540,
+                                lineNumber: 560,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/package-section.tsx",
-                        lineNumber: 537,
+                        lineNumber: 557,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1258,13 +1276,13 @@ function clamp(v, lo = 0, hi = 1) {
                         children: "Tu paquete cubre cada detalle desde que sales de Cancun hasta que regresas."
                     }, void 0, false, {
                         fileName: "[project]/components/package-section.tsx",
-                        lineNumber: 544,
+                        lineNumber: 564,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/package-section.tsx",
-                lineNumber: 524,
+                lineNumber: 544,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1275,26 +1293,26 @@ function clamp(v, lo = 0, hi = 1) {
                         children: "Descubre"
                     }, void 0, false, {
                         fileName: "[project]/components/package-section.tsx",
-                        lineNumber: 551,
+                        lineNumber: 571,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
                         className: "h-5 w-5 animate-bounce text-foreground/25"
                     }, void 0, false, {
                         fileName: "[project]/components/package-section.tsx",
-                        lineNumber: 554,
+                        lineNumber: 574,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/package-section.tsx",
-                lineNumber: 550,
+                lineNumber: 570,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/package-section.tsx",
-        lineNumber: 518,
+        lineNumber: 538,
         columnNumber: 5
     }, this);
 }
@@ -1305,7 +1323,7 @@ function PackageSection() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Intro, {}, void 0, false, {
                 fileName: "[project]/components/package-section.tsx",
-                lineNumber: 566,
+                lineNumber: 586,
                 columnNumber: 7
             }, this),
             features.map((f, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1314,7 +1332,7 @@ function PackageSection() {
                             color: f.color
                         }, void 0, false, {
                             fileName: "[project]/components/package-section.tsx",
-                            lineNumber: 570,
+                            lineNumber: 590,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Slide, {
@@ -1323,29 +1341,29 @@ function PackageSection() {
                             total: features.length
                         }, void 0, false, {
                             fileName: "[project]/components/package-section.tsx",
-                            lineNumber: 571,
+                            lineNumber: 591,
                             columnNumber: 11
                         }, this)
                     ]
                 }, f.id, true, {
                     fileName: "[project]/components/package-section.tsx",
-                    lineNumber: 569,
+                    lineNumber: 589,
                     columnNumber: 9
                 }, this)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Summary, {}, void 0, false, {
                 fileName: "[project]/components/package-section.tsx",
-                lineNumber: 575,
+                lineNumber: 595,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Flyer, {}, void 0, false, {
                 fileName: "[project]/components/package-section.tsx",
-                lineNumber: 576,
+                lineNumber: 596,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/package-section.tsx",
-        lineNumber: 565,
+        lineNumber: 585,
         columnNumber: 5
     }, this);
 }

@@ -933,6 +933,10 @@ body {
   height: 100svh;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .max-h-96 {
   max-height: 24rem;
 }
@@ -3810,6 +3814,10 @@ body {
 
   .md\:h-\[80svh\] {
     height: 80svh;
+  }
+
+  .md\:h-20 {
+    height: 5rem;
   }
 
   .md\:w-\[var\(--radix-navigation-menu-viewport-width\)\] {
