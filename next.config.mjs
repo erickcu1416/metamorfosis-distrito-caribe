@@ -1,8 +1,3 @@
-import { dirname } from "path"
-import { fileURLToPath } from "url"
-
-const __dirname = dirname(fileURLToPath(import.meta.url))
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   typescript: {
@@ -18,9 +13,6 @@ const nextConfig = {
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     qualities: [75, 95],
-  },
-  turbopack: {
-    root: __dirname,
   },
 }
 
