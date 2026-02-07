@@ -73,10 +73,48 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-12 border-t border-border pt-8 text-center">
-          <p className="text-xs text-muted-foreground">
-            Paquete Oficial Distrito Caribe | Dragonfly Agencia de Viajes
-          </p>
+        <div className="mt-12 border-t border-border pt-8">
+          <div className="flex flex-col items-center gap-6">
+            {/* Developer Credit */}
+            <div className="flex flex-col items-center gap-4">
+              <p className="text-xs text-muted-foreground">Diseñado y desarrollado por</p>
+
+              {/* Por Su Gracia Producciones - Principal Brand */}
+              <a
+                href="https://erickchan.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group"
+              >
+                <div className="rounded-lg bg-white/10 px-6 py-3 backdrop-blur-sm transition-all group-hover:bg-white/15">
+                  <img
+                    src="/credits/por-su-gracia-logo.svg"
+                    alt="Por Su Gracia Producciones"
+                    className="h-12 w-auto md:h-14"
+                  />
+                </div>
+              </a>
+
+              {/* Erick Chan - Personal Brand */}
+              <a
+                href="https://erickchan.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-opacity hover:opacity-80"
+              >
+                <img
+                  src="/credits/erick-chan-logo.svg"
+                  alt="Erick Chan - Web Developer"
+                  className="h-6 w-auto"
+                />
+              </a>
+            </div>
+
+            {/* Copyright */}
+            <p className="text-xs text-muted-foreground">
+              Paquete Oficial Distrito Caribe | Dragonfly Agencia de Viajes
+            </p>
+          </div>
         </div>
       </div>
     </footer>
