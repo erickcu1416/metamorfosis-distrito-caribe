@@ -127,8 +127,8 @@ const features = [
     icon: Ticket,
     title: "Volcanic Park",
     headline: "Adrenalina al maximo",
-    body: "Toboganes, albercas de olas y atracciones acuaticas en un parque tematico volcanico.",
-    tags: ["Toboganes", "Albercas de olas", "Entrada incluida"],
+    body: "Más de 20 atracciones acuáticas en un parque temático volcánico.",
+    tags: ["Más de 20 atracciones", "Parque temático", "Entrada incluida"],
     color: "#10B981",
   },
   {
@@ -178,8 +178,8 @@ const features = [
     icon: Shirt,
     title: "Kit oficial",
     headline: "Lleva el recuerdo",
-    body: "Playera y pin oficial de Metamorfosis 2026 mas acceso completo a cada servicio del Congreso Nacional.",
-    tags: ["Playera oficial", "Pin coleccionable", "Acceso completo"],
+    body: "Playera y pin oficial de Metamorfosis 2026 mas registro completo a cada servicio del Congreso Nacional.",
+    tags: ["Playera oficial", "Pin coleccionable", "Registro completo"],
     color: "#8B5CF6",
   },
 ]
@@ -447,7 +447,7 @@ function Summary() {
     "Entrada a iKataplum!",
     "Tour por Puebla y Mercado de Orizaba",
     "Playera y pin oficial del congreso",
-    "Acceso completo al Congreso Nacional",
+    "Registro al Congreso Nacional",
   ]
 
   return (

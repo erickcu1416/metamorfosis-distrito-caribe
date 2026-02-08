@@ -1,7 +1,5 @@
-[00:00:00.630] Server  LOG     ✓ Ready in 379ms
-[00:00:02.216] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
-[00:00:02.502] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:02.906] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:00.680] Server  LOG     ✓ Ready in 496ms
+[00:00:01.878] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -37,62 +35,9 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
-[35:52:00.343] Server  LOG     ✓ Compiled in 94ms
-[35:52:06.840] Server  LOG     ✓ Compiled in 34ms
-[35:52:12.050] Server  LOG     ✓ Compiled in 18ms
-[35:54:57.045] Server  LOG     ✓ Compiled in 33ms
-[35:55:02.641] Server  LOG     ✓ Compiled in 23ms
-[35:55:11.542] Server  LOG     ✓ Compiled in 40ms
-[35:58:39.286] Server  LOG     ✓ Compiled in 143ms
-[35:58:39.438] Browser ERROR   ./components/timeline-section.tsx:131:1
-Parsing ecmascript source code failed
-  129 | =======
-  130 |       mobile: "/images/congreso-mobile.png",
-> 131 | >>>>>>> 4758d8c4d9035de14c916e9124982d3a48c83870
-      | ^^^^^^^
-  132 |     },
-  133 |     objectPosition: {
-  134 |       web: "center center",
-
-Merge conflict marker encountered.
-
-Import trace:
-  Server Component:
-    ./components/timeline-section.tsx
-    ./app/page.tsx
-[36:03:24.744] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <RootLayout>
-                        <html lang="es">
-                          <head>
-                          <body
-                            className="inter_5901b7c6-module__ec5Qua__variable font-sans antialiased"
--                           cz-shortcut-listen="true"
-                          >
-                  ...
-
+[00:02:16.967] Server  LOG     ✓ Compiled in 523ms
+[00:02:17.062] Browser ERROR   uncaughtError: ReferenceError: Play is not defined
+[00:02:29.222] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:02:29.381] Server  LOG     ✓ Compiled in 57ms
+[00:05:35.389] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:39.529] Server  LOG     ✓ Compiled in 87ms

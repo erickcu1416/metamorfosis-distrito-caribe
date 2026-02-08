@@ -1,39 +1,19 @@
 "use client"
 
-import { Play, Calendar, MapPin } from "lucide-react"
-import { useState } from "react"
+import { Calendar, MapPin } from "lucide-react"
+import { VideoBackground } from "./video-background"
 
 export function HeroSection() {
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false)
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Video Placeholder */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0a0014] via-[#1a0a2e] to-[#0a0014]">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(139,92,246,0.15),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(16,185,129,0.1),transparent_50%)]" />
-        {/* Grid overlay */}
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(139,92,246,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(139,92,246,0.5) 1px, transparent 1px)",
-            backgroundSize: "60px 60px",
-          }}
-        />
-      </div>
-
-      {/* Video play button overlay */}
-      {!isVideoPlaying && (
-        <button
-          onClick={() => setIsVideoPlaying(true)}
-          className="absolute top-8 right-8 z-20 flex items-center gap-2 rounded-full border border-[#8B5CF6]/30 bg-[#8B5CF6]/10 px-4 py-2 text-sm text-[#c4b5fd] backdrop-blur-sm transition-all hover:bg-[#8B5CF6]/20 hover:border-[#8B5CF6]/50"
-          aria-label="Reproducir video"
-        >
-          <Play className="h-4 w-4 fill-current" />
-          <span>Ver video</span>
-        </button>
-      )}
+      {/* Video Background with Smart Loading */}
+      <VideoBackground
+        webSrc="/videos/hero-web.webm"
+        mobileSrc="/videos/hero-mobile.webm"
+        posterWeb="/videos/hero-web-poster.jpg"
+        posterMobile="/videos/hero-mobile-poster.jpg"
+      />
 
       {/* Hero Content */}
       <div className="relative z-10 mx-auto max-w-5xl px-4 text-center">
