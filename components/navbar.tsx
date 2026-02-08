@@ -54,7 +54,7 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="https://wa.me/5219981869770?text=Hola%2C%20quiero%20registrarme%20en%20Metamorfosis%202026"
+            href="https://wa.me/529982417202?text=Hola%2C%20quiero%20registrarme%20en%20Metamorfosis%202026"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full bg-[#8B5CF6] px-5 py-2 text-sm font-bold text-foreground transition-all hover:bg-[#7c3aed] hover:shadow-lg hover:shadow-[#8B5CF6]/25"
@@ -88,7 +88,7 @@ export function Navbar() {
               </a>
             ))}
             <a
-              href="https://wa.me/5219981869770?text=Hola%2C%20quiero%20registrarme%20en%20Metamorfosis%202026"
+              href="https://wa.me/529982417202?text=Hola%2C%20quiero%20registrarme%20en%20Metamorfosis%202026"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 block rounded-full bg-[#8B5CF6] px-5 py-3 text-center text-sm font-bold text-foreground transition-all hover:bg-[#7c3aed]"

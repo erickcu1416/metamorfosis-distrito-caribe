@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     question: "Que metodos de pago aceptan?",
-    answer: "Aceptamos transferencias bancarias y depositos. Contactanos por WhatsApp al 998 186 9770 para recibir los datos de pago y coordinar tus mensualidades.",
+    answer: "Aceptamos transferencias bancarias y depositos. Contactanos por WhatsApp al 998 241 7202 para recibir los datos de pago y coordinar tus mensualidades.",
   },
 ]
 

@@ -136,7 +136,7 @@ export default function RootLayout({
         <meta name="geo.placename" content="Cancún, Quintana Roo, México" />
 
         {/* Additional Social Tags */}
-        <meta property="og:phone_number" content="+52 998 186 9770" />
+        <meta property="og:phone_number" content="+52 998 241 7202" />
         <meta property="og:street-address" content="Distrito Caribe" />
         <meta property="og:locality" content="Cancún" />
         <meta property="og:region" content="Quintana Roo" />

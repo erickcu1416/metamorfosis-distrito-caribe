@@ -15,7 +15,7 @@ export function WhatsAppButton() {
 
   return (
     <a
-      href="https://wa.me/5219981869770?text=Hola%2C%20quiero%20registrarme%20en%20Metamorfosis%202026"
+      href="https://wa.me/529982417202?text=Hola%2C%20quiero%20registrarme%20en%20Metamorfosis%202026"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Registrarse via WhatsApp"
