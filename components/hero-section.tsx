@@ -45,7 +45,7 @@ export function HeroSection() {
           </div>
           <div className="flex items-center gap-2">
             <MapPin className="h-4 w-4 text-[#10B981]" />
-            <span className="text-sm md:text-base">Puebla, Mexico</span>
+            <span className="text-sm md:text-base">San Luis Potosí, Mexico</span>
           </div>
         </div>
 
