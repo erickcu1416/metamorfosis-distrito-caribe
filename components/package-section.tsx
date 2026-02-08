@@ -127,7 +127,7 @@ const features = [
     icon: Ticket,
     title: "Volcanic Park",
     headline: "Adrenalina al maximo",
-    body: "Más de 20 atracciones acuáticas en un parque temático volcánico.",
+    body: "Más de 20 atracciones en un parque temático volcánico.",
     tags: ["Más de 20 atracciones", "Parque temático", "Entrada incluida"],
     color: "#10B981",
   },

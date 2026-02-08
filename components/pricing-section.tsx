@@ -60,7 +60,7 @@ export function PricingSection() {
               6 pagos de feb a jul 2026
             </p>
             <a
-              href="https://wa.me/529982417202?text=Hola%2C%20quiero%20registrarme%20en%20Metamorfosis%202026"
+              href="https://wa.me/5219981869770?text=Hola%2C%20quiero%20registrarme%20en%20Metamorfosis%202026"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full rounded-full bg-[#10B981] py-3.5 text-center text-sm font-bold text-[#0a0014] shadow-lg shadow-[#10B981]/25 transition-all hover:scale-[1.02] hover:bg-[#34d399]"

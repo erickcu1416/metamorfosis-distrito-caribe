@@ -70,7 +70,7 @@ export function StructuredData() {
     "logo": "https://metamorfosis.jovenesdistritocaribe.com/credits/dragonfly-logo.png",
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+52-998-241-7202",
+      "telephone": "+52-998-186-9770",
       "contactType": "Reservaciones",
       "areaServed": "MX",
       "availableLanguage": "es"

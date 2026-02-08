@@ -25,7 +25,7 @@ export function CtaSection() {
 
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <a
-            href="https://wa.me/529982417202?text=Hola%2C%20quiero%20registrarme%20en%20Metamorfosis%202026"
+            href="https://wa.me/5219981869770?text=Hola%2C%20quiero%20registrarme%20en%20Metamorfosis%202026"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-3 rounded-full bg-[#10B981] px-8 py-4 text-base font-bold text-[#0a0014] shadow-lg shadow-[#10B981]/25 transition-all hover:bg-[#34d399] hover:shadow-[#10B981]/40 hover:scale-105"
@@ -36,10 +36,10 @@ export function CtaSection() {
             Apartar mi lugar ahora
           </a>
           <a
-            href="tel:+529982417202"
+            href="tel:+5219981869770"
             className="inline-flex items-center gap-2 rounded-full border border-[#8B5CF6]/30 bg-[#8B5CF6]/10 px-8 py-4 text-base font-semibold text-[#c4b5fd] transition-all hover:bg-[#8B5CF6]/20 hover:border-[#8B5CF6]/50"
           >
-            Llamar: 9982 41 72 02
+            Llamar: 998 186 9770
           </a>
         </div>
 

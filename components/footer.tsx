@@ -58,13 +58,13 @@ export function Footer() {
             </h3>
             <div className="space-y-3">
               <a
-                href="https://wa.me/529982417202"
+                href="https://wa.me/5219981869770"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-[#10B981]"
               >
                 <Phone className="h-4 w-4 text-[#10B981]" />
-                9982 41 72 02
+                998 186 9770
               </a>
               <a
                 href="https://www.jovenesdistritocaribe.com"
