@@ -72,8 +72,8 @@ const events: TimelineEvent[] = [
     icon: Church,
     color: "purple",
     images: {
-      web: "/images/kit-web.png",
-      mobile: "/images/kit-mobile.png",
+      web: "/images/congreso-web.png",
+      mobile: "/images/congreso-mobile.png",
     },
     objectPosition: {
       web: "center center",
@@ -94,8 +94,8 @@ const events: TimelineEvent[] = [
     icon: Church,
     color: "green",
     images: {
-      web: "/images/kit-web.png",
-      mobile: "/images/kit-mobile.png",
+      web: "/images/congreso-web.png",
+      mobile: "/images/congreso-mobile.png",
     },
     objectPosition: {
       web: "center center",
@@ -115,8 +115,8 @@ const events: TimelineEvent[] = [
     icon: Church,
     color: "purple",
     images: {
-      web: "/images/kit-web.png",
-      mobile: "/images/kit-mobile.png",
+      web: "/images/congreso-web.png",
+      mobile: "/images/congreso-mobile.png",
     },
     objectPosition: {
       web: "center center",
